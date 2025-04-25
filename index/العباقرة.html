@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>العبا</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f3f9ff, #d2e6ff);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 3em 1em 1em;
+    }
+    h1 {
+      font-size: 3em;
+      color: #2563eb;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+    }
+    .character {
+      width: 200px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .speech-bubble {
+      position: relative;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1em;
+      max-width: 300px;
+      font-size: 1.1em;
+      margin-top: 1em;
+      animation: fadeIn 2s ease forwards;
+    }
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 30px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #fff transparent transparent transparent;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .download-buttons {
+      margin-top: 2em;
+    }
+    .download-buttons a {
+      text-decoration: none;
+      background: #2563eb;
+      color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 8px;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download-buttons a:hover {
+      background: #1e40af;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>العباقرة</h1>
+    <p>اهلا بكم طلابنا الأعزاء  لتحميل التطبيق اضغط علي الزر</p>
+  </header>
+
+  <div class="hero">
+    <img src="WhatsApp Image 2025-04-25 at 16.30.51_8cb12ab2.jpg" alt="logo" class="character" />
+    <div class="speech-bubble" id="speech">
+        <a href="#" class="download-btn" data-file="app.apk">Download for Android</a>
+     
+    </div>
+    <div class="download-buttons">
+      
+      
+      <a href="https://mega.nz/file/PJMnEYbA#DrUcr1_wAD-bOk-4r2YopBS9bro2b_6T-zUmZUd_4lA" download class="download-btn">تحميل التطبيق</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; develop by Mohy Tabana 
+  </footer>
+
+  <!-- Typed.js for typing effect -->
+  <img src="C:\Users\Hala Gamal\OneDrive\Desktop\mohy\WhatsApp Image 2025-04-25 at 16.42.42_cdc7a35e.jpg" alt="logo" width="200px"/> 
+  <script>
+    new Typed('#speech', {
+      strings: [
+        "Hey there! 👋 I'm Eddy, your learning buddy!",
+        "Ready to explore the world of knowledge?",
+        "Download EduWorld and let's get started!"
+      ],
+      typeSpeed: 40,
+      backSpeed: 20,
+      backDelay: 1500,
+      startDelay: 500,
+      loop: true
+    });
+    
+  </script>
+</body>
+</html>
